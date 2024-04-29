@@ -1,0 +1,8 @@
+{% extends 'base.html' %}
+
+{% block content %}
+  <h2>Track Service Requests</h2>
+  {% for request in service_requests %}
+    <p>{{ request.request_type }} - {{ request.submitted_at }}</p>
+  {% endfor %}
+{% endblock %}
